@@ -11,8 +11,8 @@ export class OffresComponent implements OnInit {
   ngOnInit() {
     // Récupérez la liste des offres d'emploi depuis votre API ou tout autre source de données
     this.jobList = [
-      { title: 'Développeur Frontend', company: 'ABC Company', location: 'Paris' },
-      { title: 'Designer UX/UI', company: 'XYZ Company', location: 'London' },
+      { title: 'CHAUFFEUR D’ENGIN', company: 'Travail temporaire', location: "Côte d'Ivoire - Abidjan" },
+      { title: 'PEINTRE', company: 'Travail temporaire', location: "Côte d'Ivoire - Abidjan" },
       // Ajoutez d'autres offres d'emploi ici
     ];
   }
