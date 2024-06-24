@@ -5,10 +5,6 @@ import { SecureModule } from './secure/secure.module';
 
 const routes: Routes = [
   
-  // { path: '', component: HomeComponent },
-  // { path: 'about_us', component: AboutUsComponent },
-  // { path: 'contact_us', component: ContactUsComponent },
-  
   // pour charger le public module
   {
     path: '',
@@ -16,11 +12,6 @@ const routes: Routes = [
       import('./public/public.module').then((m) => m.PublicModule),
   },
   
-// <div class="main-wrapper home-six">
-// <app-header></app-header>
-// <p>blog works!</p>
-//  <app-footer></app-footer>
-// </div>
 
   // pour charger le secure module
   {

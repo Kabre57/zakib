@@ -15,15 +15,8 @@
     </div>
 </section>
 
-<section class="pt_120 pb_120">
-    <div class="auto-container">
-        <div class="content text-center">
-            <h1>Website under</h1>
-            <h2 class="mb_30">Maintenance</h2>
-            <p class="mb_30">Sorry, but the page you are looking for is under maintenance.</p>
-            <div class="link-box mb_30">
-                <a routerLink="/" class="btn-1 pt_18 pb_15 pl_30 pr_30 b_radius_5 ff_sec fw_bold tt_u fs_14 ls_1">Go to Homepage <i class="flaticon-right-arrow-1"></i><span></span></a>
-            </div>
-        </div>
-    </div>
-</section>
+<div *ngFor="let job of jobList">
+    <h2>{{ job.title }}</h2>
+    <p>{{ job.company }}</p>
+    <p>{{ job.location }}</p>
+  </div>
