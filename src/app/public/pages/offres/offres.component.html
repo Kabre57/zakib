@@ -6,7 +6,7 @@
         <span class="line-grid-4"></span>
         <span class="line-grid-5"></span>
     </div>
-    <div class="banner-1-image-1 p_absolute b_0 r_0"><img src="assets/images/resource/building3.png" alt=""></div>              
+           
     <div class="auto-container">
         <div class="p_relative text-center">
             <h1 class="c_light mb_10 fw_black fs_65 wow fadeInUp" data-wow-delay=".2s" data-wow-duration="1.5s">Offres d’emploi</h1> 
@@ -15,8 +15,22 @@
     </div>
 </section>
 
-<div *ngFor="let job of jobList">
-    <h2>{{ job.title }}</h2>
-    <p>{{ job.company }}</p>
-    <p>{{ job.location }}</p>
+<section *ngIf="isInMaintenance" class="maintenance-notice">
+    <div class="maintenance-container">
+      <h2>Maintenance en cours</h2>
+      <p>Nous effectuons actuellement des travaux de maintenance sur cette partie du site web. Nous nous excusons pour la gêne occasionnée et vous remercions de votre compréhension.</p>
+      <p>Nos équipes travaillent pour vous offrir une expérience optimale dans les plus brefs délais.</p>
+      <p>Merci de votre patience.</p>
+    </div>
+  </section>
+  
+  <div *ngIf="!isInMaintenance">
+    <!-- Affichage de la liste des offres d'emploi -->
+    <ul>
+      <li *ngFor="let job of jobList">
+        <h3>{{ job.title }}</h3>
+        <p>{{ job.company }}</p>
+        <p>{{ job.location }}</p>
+      </li>
+    </ul>
   </div>

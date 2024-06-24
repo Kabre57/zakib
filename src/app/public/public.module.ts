@@ -10,6 +10,7 @@ import { PresentationComponent } from './pages/presentation/presentation.compone
 import { ActivitesComponent } from './pages/activites/activites.component';
 import { ReferencesComponent } from './pages/references/references.component';
 import { OffresComponent } from './pages/offres/offres.component';
+import { DetailOffresComponent } from './pages/detail-offres/detail-offres.component';
 
 
 
@@ -22,7 +23,8 @@ import { OffresComponent } from './pages/offres/offres.component';
     PresentationComponent,
     ActivitesComponent,
     ReferencesComponent,
-    OffresComponent
+    OffresComponent,
+    DetailOffresComponent
   ],
   imports: [
     CommonModule,

@@ -1,0 +1,23 @@
+.maintenance-notice {
+    background-color: #f8f8f8;
+    padding: 40px 0;
+    text-align: center;
+    }
+    
+    .maintenance-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    }
+    
+    .maintenance-notice h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    }
+    
+    .maintenance-notice p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    }

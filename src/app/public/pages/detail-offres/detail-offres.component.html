@@ -1,0 +1,34 @@
+<section class="banner-1-section pt_240 pb_140 bg_cover overflow-hidden" style="background-image: url(assets/images/background/bg-4.jpg);">
+    <div class="line-grid-wrap">
+        <span class="line-grid-1"></span>
+        <span class="line-grid-2"></span>
+        <span class="line-grid-3"></span>
+        <span class="line-grid-4"></span>
+        <span class="line-grid-5"></span>
+    </div>
+    
+    <div class="auto-container">
+        <div class="p_relative text-center">
+            <h1 class="c_light mb_10 fw_black fs_65 wow fadeInUp" data-wow-delay=".2s" data-wow-duration="1.5s">Job Details</h1> 
+            <ul class="fs_18 d-flex justify-content-center c_light wow fadeInLeft" data-wow-delay=".5s" data-wow-duration="1.5s">
+                <li><a href="">Home</a></li>
+                <li class="ml_10 mr_10">/</li>
+                <li>Job Details</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<div class="container">
+    <h1>Offre d'emploi - Charpentier</h1>
+    <p>Type d'emploi: {{ job.type }}</p>
+    <p>Lieu de travail: {{ job.location }}</p>
+    <h2>Description du poste</h2>
+    <p>{{ job.description }}</p>
+    <h2>Qualités requises</h2>
+    <ul>
+      <li *ngFor="let qualification of job.qualifications">
+        <span class="bullet">•</span> {{ qualification }}
+      </li>
+    </ul>
+  </div>
+

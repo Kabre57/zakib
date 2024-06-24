@@ -7,6 +7,7 @@ import { ActivitesComponent } from './pages/activites/activites.component';
 import { PresentationComponent } from './pages/presentation/presentation.component';
 import { ReferencesComponent } from './pages/references/references.component';
 import { OffresComponent } from './pages/offres/offres.component';
+import { DetailOffresComponent } from './pages/detail-offres/detail-offres.component';
 
 
 const routes: Routes = [
@@ -16,6 +17,8 @@ const routes: Routes = [
   { path: 'references', component: ReferencesComponent },
   { path: 'presentation', component: PresentationComponent },
   { path: 'offres', component: OffresComponent },
+  { path: 'DetailOffres', component: DetailOffresComponent},
+ 
 ];
 
 
